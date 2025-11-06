@@ -317,6 +317,88 @@ body.dark-mode .tile {
 body.dark-mode .tile .overlay {
   background: rgba(255, 255, 255, 0.1);
 }
+/* Fix mobile spacing */
+@media (max-width: 600px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .section-card {
+    margin: 1rem 0;
+    padding: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .section-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}
 
 
-    </style>
+  /* ---------- Consistent header/nav design ---------- */
+header {
+  width: 100%;
+  background: transparent;
+  padding: 18px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0077b6;
+}
+
+/* ---------- Keep same gap on all pages ---------- */
+body {
+  margin: 0;
+  padding-top: 80px; /* same space for header height */
+  font-family: 'Montserrat', sans-serif;
+}
+
