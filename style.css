@@ -272,3 +272,68 @@ html.dark-mode footer {
 html.dark-mode .toggle-btn {
   color: #e9eef4;
 }
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .section-card {
+    padding: 1.3rem;
+  }
+
+  .about,
+  main {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .profile-picture {
+    width: 200px;
+    height: 240px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-content {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /* contact cards mobile alignment */
+  .contact-wrapper {
+    gap: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.8rem;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .left {
+    align-items: center;
+  }
+}
